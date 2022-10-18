@@ -3,13 +3,13 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <div className="flex">
-      <div>
+    <div className="flex p-5">
+      <div className="flex-1 text-center">
         <Link href="/">
           <a>Compari</a>
         </Link>
       </div>
-      <nav>
+      <nav className="flex-1 text-center">
         <Link href="/account">
           <ul>Account</ul>
         </Link>

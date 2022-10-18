@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
-import Create from "@/components/Create";
+import Compare from "@/components/Compare";
 
 export default function Home() {
   return (
     <Layout>
-      <Create />
+      <Compare />
     </Layout>
   );
 }

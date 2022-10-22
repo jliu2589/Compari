@@ -1,15 +1,11 @@
 import { useState } from "react";
-
-const [cars, setCars] = useState < t > [];
+import { PokemonClient } from "pokenode-ts";
 
 export async function getServerSideProps() {
-  const res = await fetch(
-    "https://private-anon-dde7d9ff96-carsapi1.apiary-mock.com/cars"
-  );
-  const data = await res.json();
+  const api = new PokemonClient();
+  const pokemon1 = await api.getPokemonById(1);
+  const pokemon2 = await api.getPokemonById(1);
   return {
-    props: {
-      data,
-    },
+    props: { pokemon1, pokemon2 },
   };
 }

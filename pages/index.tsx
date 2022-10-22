@@ -1,26 +1,17 @@
 import Layout from "@/components/Layout";
 import Compare from "@/components/Compare";
+import { PokemonClient } from "pokenode-ts";
 
 export async function getServerSideProps() {
-  const res = await fetch(
-    "https://private-anon-dde7d9ff96-carsapi1.apiary-mock.com/cars/<car_id>",
-    {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  );
-  const data = await res.json();
+  const api = new PokemonClient();
+  const pokemon1 = await api.getPokemonById(1);
   return {
-    props: {
-      data,
-    },
+    props: { pokemon1 },
   };
 }
 
-export default function Home({ data }) {
-  console.log(data);
+export default function Home({ pokemon1 }) {
+  console.log(pokemon1);
   return (
     <Layout>
       <Compare />

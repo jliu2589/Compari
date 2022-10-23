@@ -1,0 +1,24 @@
+{
+  "transport": [
+    {
+      "id": "1",
+      "option": "car"
+    },
+    {
+      "id": "2",
+      "option": "bus"
+    },
+    {
+      "id": "3",
+      "option": "uber"
+    },
+    {
+      "id": "4",
+      "option": "bike"
+    },
+    {
+      "id": "5",
+      "option": "train"
+    }
+  ]
+}

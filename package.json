@@ -9,9 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "^12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+=======
+    "@tanstack/react-query": "^4.12.0",
+    "@trpc/client": "^10.0.0-proxy-beta.24",
+    "@trpc/next": "^10.0.0-proxy-beta.24",
+    "@trpc/react-query": "^10.0.0-proxy-beta.24",
+    "@trpc/server": "^10.0.0-proxy-beta.24",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zod": "^3.19.1"
+>>>>>>> dde09855d5ab5e190bdff198e6fdc7216bfbb45c
   },
   "devDependencies": {
     "@types/node": "18.11.0",
@@ -20,7 +32,11 @@
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "postcss": "^8.4.18",
+<<<<<<< HEAD
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"
+=======
+    "tailwindcss": "^3.2.0"
+>>>>>>> dde09855d5ab5e190bdff198e6fdc7216bfbb45c
   }
 }
